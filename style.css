@@ -1,0 +1,126 @@
+.myprogress {
+	    width:200px;
+	    background-color: #e9ecef;
+	    display: none;
+	    border-radius: 5px;
+	    position: absolute;
+	    bottom: 50%;
+	    left: calc(50% - 100px);
+	}
+
+	.mybar {
+	  width: 0;
+	  height: 20px;
+	  background-color: #007bff;
+	  text-align: center;
+	  line-height: 20px;
+	  color: white;
+	  border-radius: 5px;
+	}
+	.firstname,.lastname,.published-date,.list-title-desc,.list-agency-desc,.exam-number,.list-number,.firstname-head,.lastname-head{
+		padding-left: 10px;
+		font-size: 12px;
+		color:red;
+		display: inline-block;
+		min-width:50%;
+		line-height: 16px;
+		vertical-align: top;
+	}
+	.result-header span{
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.firstname-head,.lastname-head{
+		color:black;
+	}
+	.firstname,.lastname{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.search-button{
+		vertical-align: top;
+	}
+	.first-name-wrapper,.last-name-wrapper{
+		display: inline-block;
+	}
+	.first-name-wrapper input,.last-name-wrapper input{
+		display: block;
+		width: 150px;
+	}
+	.published-date{
+		color:black;
+	}
+	.list-title-desc{
+		color:black;
+	}
+	.list-agency-desc{
+		color:black;
+	}
+	.exam-number{
+		color:black;
+	}
+	.list-number{
+		color:black;
+	}
+	.search-results{
+		font-family: verdana;
+    	padding-top: 30px;
+	}
+	.search-results div{
+		padding: 10px 0;
+	    line-height: 20px;
+	    display: grid;
+	    grid-template-columns: repeat(1, 1fr);
+	    border-bottom: 1px solid black;
+	    border-right: 1px solid black;
+	    border-left: 1px solid black;
+	}
+	.search-results div:first-child{
+		border-top: 1px solid black;
+	}
+	.search div span{
+		padding: 8px 4px;
+	    border-left: 1px solid black;
+	    border-bottom: 1px solid black;
+	}
+	.search-results div:hover{
+		background: #ccc;
+	}
+	.search-filter-input{
+		margin: 0 auto;
+    	width: 50%;
+	}
+	.container-fluid{
+		max-width: 1000px;
+    	margin-top: 10px;
+	}
+	.searchbox-wrapper{
+		background-color: #e9ecef;
+	    border-radius: .3rem;
+	    padding: 20px;
+	}
+	@media screen and (min-width: 575px){
+		.firstname,.lastname,.published-date,.list-title-desc,.list-agency-desc,.exam-number,.list-number,.firstname-head,.lastname-head{
+			min-width: auto;
+		}
+		.myprogress {
+		    width:400px
+		    left: calc(50% - 200px);
+		}
+		.search-filter-input{
+			width:60%;
+		}
+		.search-results div{
+	    	grid-template-columns: repeat(2, 1fr);
+		}
+
+	}
+	@media screen and (min-width: 992px){
+		.search-results div{
+			grid-template-columns: repeat(7, 1fr);
+		}
+	}
+
+
+
+
