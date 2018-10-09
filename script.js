@@ -6,7 +6,6 @@ const firstName = document.getElementById("firstname");
 const lastName = document.getElementById("lastname");
 const searchResults = document.getElementById("search-results");
 const item = searchResults.getElementsByTagName("div");
-
 function getresults(){
 	hideResults();
 	fetch(url).
